@@ -10,15 +10,15 @@ Feature: Add Products and Checkout Functionality
     Then I should see Thank you for your order
 
   #Test 006
-  Scenario: After added 2 products and emptying the postal code
+  Scenario: After added products and emptying the postal code
     Given I am logged into SwagLabs
     And I click my cart button
     When I empty the postal code
     Then I should see Postal Code is required
 
   #Test 007
-  Scenario: After added 2 products and emptying the last name
+  Scenario: After added products and emptying the last name
     Given I am logged into SwagLabs
     And I click my cart button
-    When I empty the last name
+    When  I empty the last name
     Then I should see Last Name is required
